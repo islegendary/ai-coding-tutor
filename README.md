@@ -15,14 +15,18 @@ The interface shows the chat on the left and a feedback/goal panel on the right.
 ## Getting Started
 
 1. Install server dependencies:
+
    ```bash
    cd server && npm install
    ```
+
 2. Set your `OPENAI_API_KEY` environment variable.
 3. Start the server:
+
    ```bash
    node index.js
    ```
+
 4. Open `http://localhost:3000` in your browser to use the tutor.
 
 The server serves the React client from the `client` folder and proxies chat requests to ChatGPT‑4o.

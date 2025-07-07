@@ -1,16 +1,17 @@
 # AI Coding Tutor
 
-This project provides a simple programming tutor that runs entirely in the browser and communicates with ChatGPT‑4o through a small Node.js server. Beginners can explore Python, JavaScript and Rust with guided tasks and real‑time feedback.
+AI Coding Tutor is a lightweight programming tutor that runs entirely in the browser and communicates with ChatGPT‑4o through a small Node.js server.  It helps beginners explore several programming languages with guided tasks and real‑time feedback.
 
 ## Features
 
-- Language selector for Python, JavaScript and Rust
-- Prompted or exploration modes so beginners receive suggestions
-- ChatGPT‑4o integration for contextual code explanations
-- Side panel feedback highlighting positive points and improvements
-- Personalized learning goals with progress bars
+- Language selector supporting Python, JavaScript, TypeScript, Java, Kotlin, Rust, Go, C#, C++, Swift, PHP and Ruby
+- Toggle between prompted lesson mode or free‑form exploration
+- ChatGPT‑4o integration for contextual code examples and explanations
+- Side panel feedback that highlights positives and suggests improvements
+- Personalized learning goals with simple progress bars
+- Health check endpoint at `/api/health`
 
-The interface shows the chat on the left and a feedback/goal panel on the right.
+The interface shows the chat on the left and a feedback / goal panel on the right.
 
 ## Getting Started
 
@@ -20,8 +21,9 @@ The interface shows the chat on the left and a feedback/goal panel on the right.
    cd server && npm install
    ```
 
-2. Set your `OPENAI_API_KEY` environment variable.
-3. Start the server:
+2. Create a `.env` file in the `server` folder and set your `OPENAI_API_KEY`.
+
+3. Start the server (use `npm run dev` for hot reload during development):
 
    ```bash
    node index.js
